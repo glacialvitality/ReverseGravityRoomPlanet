@@ -1,7 +1,7 @@
 {
-  "Version": 2,
+  "Version": 1,
   "Files": [
-    "include/LavaJamboSunPlanet.h",
-    "source/LavaJamboSunPlanet.cpp"
+    "include/ReverseGravityRoomPlanet.h",
+    "source/ReverseGravityRoomPlanet.cpp"
   ]
 }
