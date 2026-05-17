@@ -1,0 +1,29 @@
+{
+  "Name": "Prohibit Healing Area",
+  "Author": "GlacialVitality",
+  "Description": "A custom area that prevents the healing of any player that enters it by any means (disables healing by coin collection).",
+  "InstallDependencies": ["Syati_ObjectFactories", "Syati_Init", "ExtAreaObjMgr"],
+  "SupportedGames": [
+    "SB4E"
+  ],
+  "ModuleData" : [
+    {
+      "NameObjFactory": [
+        {
+          "Name" : "ForbidHealArea",
+          "Function" : "createExtActor<ForbidHealArea>",
+          "Include" : "ForbidHealArea.h"
+        }
+      ]
+    },
+    {
+      "AreaObjMgr" : [
+        {
+          "Name" : "ForbidHealArea",
+          "MaxCount" : "64",
+          "Function" : "AreaObjContainer::createManager<AreaObjMgr>"
+        }
+      ]
+    }
+  ]
+}
