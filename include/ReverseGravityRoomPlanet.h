@@ -17,4 +17,6 @@ public:
     void exeUpWait();
     void startSwitchOn();
     void startSwitchOff();
+
+    s32 mInvert; // _D0
 };
